@@ -1,6 +1,7 @@
 main {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 24px;
     padding-block: 24px;
 }
@@ -9,4 +10,17 @@ main img {
     width: 286px;
     height: 286px;
     object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    main {
+        gap: 16px;
+    }
+}
+
+@media (max-width: 634px) {
+    main img {
+        width: 20.5rem;
+        height: 20.5rem;
+    }
 }
